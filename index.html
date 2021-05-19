@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Todo</title>
+</head>
+<body onload="getTodo()">
+    <h1>TODO APP</h1>
+    <input id="todoInput" type="text" placeholder="Type in here..."/>
+    <br><br>
+    <span id="result"></span>
+    <br><br>
+    <input id="todoAdd" type="button" value="Add" onclick="addTodo()"/>
+    <input id="todoAdd" type="button" value="Refresh" onclick="reload()"/>
+    <ol id="todoList"></ol>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
