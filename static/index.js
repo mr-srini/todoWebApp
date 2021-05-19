@@ -12,7 +12,7 @@ async function addTodo() {
       result.innerText = jsonData.message.replace("Body", "Note")
       todoInput.value = ""
       if(response.status==200){
-        await sleep(2000)
+        await sleep(3000)
         reload()
       }
     });
@@ -38,8 +38,3 @@ function reload() {
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
-
-// setInterval(function(){
-//   var isoTime = new Date().toISOString()
-//   result.innerHTML = new Date(isoTime).toLocaleString(undefined,{timeZone:'Asia/Kolkata'})
-// },1000)
