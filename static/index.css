@@ -68,10 +68,10 @@ i {
     padding: 10px 0;
     border: 2px solid rgba(111, 233, 121, 0.3);
     width: 60%;
-    min-height: 40vh;
+    min-height: 70vh;
     margin:  auto;
     display: flex;
-    max-height: 40vh;
+    max-height: 70vh;
     flex-direction: column;
     position: relative;
     overflow-y: auto;
@@ -92,4 +92,9 @@ i {
 
 p {
     margin-left: 10px;
+}
+
+#result {
+    margin: 10px;
+    color: rgba(255, 0, 0, 0.598);
 }

@@ -3,14 +3,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Todo</title>
 </head>
 <body onload="getTodo()">
     <div class="maincontainer">
         <div class="container">
-            <div class="title"><h2>TODOs</h2></div>
+            <div class="title"><h2>Todos</h2></div>
             <div class="inputs">
                 <input id="todoInput" type="text" placeholder="Type in here..."/>
                 <i class="fas fa-plus-circle" onclick="addTodo()"></i>
@@ -20,6 +20,6 @@
             <ol id="todoList"></ol>
         </div>
     </div>
-    <script src="index.js" type="text/javascript"></script>
+    <script src="{{url_for('static', filename='index.js')}}" type="text/javascript"></script>
 </body>
 </html>
